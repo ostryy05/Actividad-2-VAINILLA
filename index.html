@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Original+Surfer&effect=emboss' rel='stylesheet' type='text/css'>
+  
+    <audio id="clip1">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
+    </audio>
+    <audio id="clip2">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source>
+    </audio>
+    <audio id="clip3">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source>
+    </audio>
+    <audio id="clip4">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
+    </audio>
+</head>
+<body>
+  <!-- actividad 1, cuenta atrás -->
+    <section class="section-center">
+        <!-- image -->
+        <article class="gift-img">
+          <img src="./gift.jpeg" alt="gift" />
+        </article>
+        <!-- info -->
+        <article class="gift-info">
+          <h3>Oferta de Iphone</h3>
+          <h4 class="giveaway">
+            La oferta termina el Miércoles 12 de Junio, 8:00am
+          </h4>
+          <p>
+            El Apple iPhone 6S es la nueva generación del iPhone 6, incorporando cambios tanto estéticos como de hardware. El iPhone 6S conserva la pantalla de 4.7 pulgadas con resolución Retina, pero incorpora un nuevo procesador A9, una cámara iSight de 12 megapixels, una cámara frontal de 5 megapixels con un flash Retina, y tecnología 3D Touch, que permite reconocer la presión ejercida sobre la pantalla para una nueva forma de interactuar con los paneles táctiles.
+          </p>
+          <div class="deadline">
+            <!-- days -->
+            <div class="deadline-format">
+              <div>
+                <h4 class="days">34</h4>
+                <span>Días</span>
+              </div>
+            </div>
+            <!-- end of days -->
+            <!-- days -->
+            <div class="deadline-format">
+              <div>
+                <h4 class="hours">34</h4>
+                <span>Horas</span>
+              </div>
+            </div>
+            <!-- end of days -->
+            <!-- minutes -->
+            <div class="deadline-format">
+              <div>
+                <h4 class="minutes">34</h4>
+                <span>Min</span>
+              </div>
+            </div>
+            <!-- end of days -->
+            <!-- minutes -->
+            <div class="deadline-format">
+              <div>
+                <h4 class="seconds">34</h4>
+                <span>Seg</span>
+              </div>
+            </div>
+            <!-- end of days -->
+          </div>
+        </article>
+      </section>
+      <!-- actividad 2, juego simon -->
+
+      <div id="outer-circle">
+        <div id="topleft"></div>
+        <div id="topright"></div>
+        <div id="bottomleft"></div>
+        <div id="bottomright"></div>
+        <div id="inner-circle">
+          <div id="title" class="font-effect-emboss">SIMON!</div>
+          <div id="switches">
+            <input type="checkbox" class="toggle" id="on">
+            <button class="button" id="start">Start</button>
+            <input type="checkbox" class="toggle" id="strict">
+          </div>
+          <div class="text1">
+            <span>Prender</span><span>Estricto</span>
+          </div>
+          <div id="turn"></div>
+          <div class="text2">
+            Contador
+          </div>
+        </div>
+      </div>
+      <!-- javascript -->
+      <script src="app.js"></script>
+</body>
+</html>
